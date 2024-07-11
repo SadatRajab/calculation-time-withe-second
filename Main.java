@@ -5,6 +5,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Input user
+        System.out.println("Enter Second:");
         int inputUser = scanner.nextInt();
 
         //hours
