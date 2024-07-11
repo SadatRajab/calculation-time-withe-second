@@ -5,19 +5,21 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Input user
-        System.out.println("Enter Second:");
         int inputUser = scanner.nextInt();
 
         //hours
         int hours= inputUser/3600;
-        if(hours<=-1){ hours=hours*-1;}
+        int hours2=(3600-inputUser);
+        if(hours2<-1){ hours2=hours2*-1;}
 
         //mintes
-        int min=(inputUser%3600)/60;
+        int min=hours2/60;
+        int min2=(60-hours2);
+        if (min2<-1){min2=min2*-1;}
 
         //second
-        int second=inputUser%60;
+        int second=min2/60;
 
-        System.out.println(hours+":"+min+":"+second);
+
     }
 }
